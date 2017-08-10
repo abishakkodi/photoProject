@@ -1,6 +1,8 @@
 import React from 'react';
 
 class TableEntry extends React.Component {
+  constructor(props)
+
    render() {
       return (
          <div>
@@ -10,3 +12,5 @@ class TableEntry extends React.Component {
    }
 }
 export default TableEntry;
+
+

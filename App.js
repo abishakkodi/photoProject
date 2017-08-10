@@ -2,6 +2,14 @@ import React from 'react';
 import Tble from './Table.js';
 import PhotoImage from './PhotoImage.js';
 
+var data = [{ url:'https://regmedia.co.uk/2013/10/25/cosmos07.jpg',
+  title: 'Cosmic Background',
+  rating: 5
+
+
+}]
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -11,10 +19,10 @@ class App extends React.Component {
 
       },
       {
-
+        //some data
       },
       {
-
+        //some other data
       }],
       currentPhoto: this.photos
     }
@@ -24,7 +32,7 @@ class App extends React.Component {
    render() {
       return (
          <div>
-          <h1> APP </h1>
+          <h1> PhotoApp </h1>
           <br/>
             <Tble/>
             <PhotoImage/>
@@ -32,4 +40,5 @@ class App extends React.Component {
       );
    }
 }
+
 export default App;

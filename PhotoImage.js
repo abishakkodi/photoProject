@@ -5,7 +5,7 @@ class PhotoImage extends React.Component {
    render() {
       return (
          <div>
-          <img src='https://regmedia.co.uk/2013/10/25/cosmos07.jpg'/>
+          <img className='photoImage' src='https://regmedia.co.uk/2013/10/25/cosmos07.jpg'/>
          </div>
       );
    }
