@@ -3,25 +3,21 @@ import TableEntry from './TableEntry.js';
 
 
 class Tble extends React.Component {
-   render() {
-      return (
-         <div>
-          <table>
-            <tr >
-              <td>A</td>
-            </tr>
+  constructor(props){
+    super(props)
+  }
 
-            <tr >
-              <td>C</td>
-            </tr>
-
-            <tr>
-              <td>E</td>
-            </tr>
-
-          </table>
-         </div>
-      );
-   }
+  render() {
+    return (
+       <div>
+        <table>
+          {this.props.data.map((picture)=>
+            <TableEntry picture={picture}/>
+          )}
+        </table>
+       </div>
+    );
+  }
 }
+
 export default Tble;
