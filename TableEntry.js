@@ -7,13 +7,8 @@ class TableEntry extends React.Component {
 
    render() {
       return (
-         <div>
+         <div onClick={()=> this.props.changeBackGroundOnClick(this.props.picture)}>
             <h3>Title: {this.props.picture.title}</h3>
-
-            <h4> Photographer: {this.props.picture.photographer}</h4>
-
-            <h4>Rating : {this.props.picture.rating}</h4>
-
          </div>
       );
    }

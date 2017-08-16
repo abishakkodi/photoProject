@@ -11,7 +11,9 @@ class PhotoImage extends React.Component {
          <div>
           <img className='photoImage'src={this.props.img.url}/ >
           <div>
-            <h1>{(this.props.img.url)} </h1>
+            <h3>{(this.props.img.title)} </h3>
+            <h3>{(this.props.img.rating)} </h3>
+
           </div>
          </div>
       );

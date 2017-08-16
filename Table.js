@@ -12,7 +12,9 @@ class Tble extends React.Component {
        <div>
         <table>
           {this.props.data.map((picture)=>
-            <TableEntry picture={picture}/>
+            <TableEntry picture={picture}
+            changeBackGroundOnClick={this.props.changeBackGroundOnClick}
+            key={picture.key}/>
           )}
         </table>
        </div>
